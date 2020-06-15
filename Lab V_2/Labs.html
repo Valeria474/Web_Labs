@@ -1,0 +1,68 @@
+<head>
+<script>
+	function run(){ 
+		var field=document.getElementById("t_field");
+		//alert(field.value);
+		document.getElementById("result").innerHTML="Дано: "+field.value;
+	}
+</script>
+<script src="main.js" defer></script>	
+
+	</head>
+	<body>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/so33OViB4R0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+		
+
+		---------Чи є числом---------
+		<br></br>
+		<h>Перевірка числа</h>
+		<form>
+  			<input type="text" id="t_field"/>
+  			<input type="button" value="Ok" onclick="run();"/>
+  			<input type="button" value="Перевірка" onclick="run2()"/>
+		</form>
+
+		--------Ціле-----------
+		<form>
+  			<input type="button" value="Ціле?" onclick="cile();"/>
+		</form>
+
+		--------Ціле діапазон-------
+		<form>
+			Перевірка: ціле з діапазону
+			<br></br>
+			Мінімальне
+  			<input type="text" id="d_first"/>
+  			<br></br> 
+  			Максимальне
+  			<input type="text" id="d_second"/>
+  			<br></br>
+  			<input type="button" value="Перевірка" onclick="cilediap()"/>
+		</form>
+
+		-------Дійсне-------
+		<br></br>
+		<form>
+  			<input type="button" value="Дійсне?" onclick="disne();"/>
+		</form>
+		-------Дійсне діапазон-------
+		<br></br>
+		<form>
+			Перевірка: дійсне з діапазону
+			<br></br>
+			Мінімальне
+  			<input type="text" id="f_first"/>
+  			<br></br> 
+  			Максимальне
+  			<input type="text" id="f_second"/>
+  			<br></br>
+  			<input type="button" value="Перевірка" onclick="disnediap()"/>
+		</form>
+
+	<div id="result"></div>
+	 <button onclick="self.close()">Close</button>
+</body>
+</html>
